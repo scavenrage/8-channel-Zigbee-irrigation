@@ -34,7 +34,7 @@ static const char *TAG = "MAIN";
 /* ── Zigbee configuration ────────────────────────────────────────────── */
 #define INSTALLCODE_POLICY_ENABLE   false
 #define MAX_CHILDREN                10
-#define ESP_ZB_PRIMARY_CHANNEL_MASK (1UL << 25)   /* fixed channel 25 */
+#define ESP_ZB_PRIMARY_CHANNEL_MASK ESP_ZB_TRANSCEIVER_ALL_CHANNELS_MASK  /* all channels 11-26 */
 
 #define ESP_MANUFACTURER_NAME  "\x09""Handmade!"
 #define ESP_MODEL_IDENTIFIER   "\x0B""relay_timer"
